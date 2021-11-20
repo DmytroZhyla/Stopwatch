@@ -1,0 +1,16 @@
+<div class="time">
+{{min}}:{{sec}}
+</div>
+<div class="container">
+
+  <div class="btn-cont">
+    <button class="btn" (click)="start()" *ngIf="stopped"> START</button>
+    <button class="btn" (click)="stop()" *ngIf="started"> STOP</button>
+    <button class="btn" (click)="dbclick()" *ngIf="!dbclicked">Wait </button>
+    <button class="btn" (click)="Wait()" *ngIf="dbclicked">Wait  </button>
+    <button class="btn" (click)="Reset()"> Reset </button>
+  </div>
+
+
+</div>
+
